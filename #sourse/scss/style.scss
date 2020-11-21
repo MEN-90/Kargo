@@ -275,6 +275,8 @@ body {
 			}
 		}
 	}
+
+	//BLOCK VIDEO================================================
 	.forms {
 		display: flex;
 		padding-top: 200px;
@@ -375,6 +377,7 @@ body {
 			}
 		}
 
+		//SPRITE=====================================================
 		.sprite {
 			display: flex;
 			flex-direction: column;
@@ -437,4 +440,43 @@ body {
 			}
 		}
 	}
+
+	//BLOCK ABOUT-US=========================================
+	.block-about-us {
+		background-color: #f3f3f3;
+		.about-us {
+			display: flex;
+			justify-content: space-between;
+			@media (max-width: 1199px) {
+				flex-wrap: wrap;
+			}
+
+			.about-us__info {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 40px 20px 60px;
+				@media (max-width: 1199px) {
+					width: 50%;
+				}
+				@media (max-width: 575px) {
+					width: 100%;
+				}
+				.about-us__title {
+					font-size: 16px;
+					font-weight: bold;
+					color: #e93b3b;
+					padding-top: 20px;
+				}
+				.about-us__text {
+					line-height: 1.5;
+					text-align: center;
+					padding-top: 20px;
+					color: #3a3a3a;
+				}
+			}
+		}
+	}
+
+	//CALC====================================
 }

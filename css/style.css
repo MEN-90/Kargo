@@ -539,3 +539,44 @@ body {
       body .block-arrow .arrow:hover {
         cursor: pointer;
         fill: #fff; }
+  body .block-about-us {
+    background-color: #f3f3f3; }
+    body .block-about-us .about-us {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      @media (max-width: 1199px) {
+        body .block-about-us .about-us {
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+      body .block-about-us .about-us .about-us__info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 40px 20px 60px; }
+        @media (max-width: 1199px) {
+          body .block-about-us .about-us .about-us__info {
+            width: 50%; } }
+        @media (max-width: 575px) {
+          body .block-about-us .about-us .about-us__info {
+            width: 100%; } }
+        body .block-about-us .about-us .about-us__info .about-us__title {
+          font-size: 16px;
+          font-weight: bold;
+          color: #e93b3b;
+          padding-top: 20px; }
+        body .block-about-us .about-us .about-us__info .about-us__text {
+          line-height: 1.5;
+          text-align: center;
+          padding-top: 20px;
+          color: #3a3a3a; }
