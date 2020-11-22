@@ -139,7 +139,87 @@
 	</div>
 	<div class="block-calc">
 		<div class="container">
-			<h1 class="calc__title">Калькулятор доставки</h1>
+			<h1 class="block-calc__title">Калькулятор доставки</h1>
+
+			<div class="calc-line">
+				<span></span>
+				<div class="calc__img">
+					<img src="./img/icons/calc.png" alt="">
+				</div>
+				<span></span>
+			</div>
+			<div class="calc__select">
+				<form action="" class="calc__select-form">
+					<div class="form-row1">
+						<div class="form-row1__block">
+							<p class="calc__select-form-text">Выдача:</p>
+							<select name="select" class="select">
+								<option value="1">В Забайкальске</option>
+								<option value="2">В Москве</option>
+								<option value="3">В Санкт-Петербурге</option>
+								<option value="4">В Мурманске</option>
+								<option value="5">В Волгограде</option>
+							</select>
+						</div>
+						<div class="form-row1__block">
+							<p class="calc__select-form-text">Вид товара:</p>
+							<select name="select" class="select">
+								<option value="1">Товар 1</option>
+								<option value="2">Товар 2</option>
+								<option value="3">Товар 3</option>
+								<option value="4">Товар 4</option>
+								<option value="5">Товар 5</option>
+							</select>
+						</div>
+						<div class="form-row1__block">
+							<p class="calc__select-form-text">Город отправки:</p>
+
+							<select name="select" class="select">
+								<option value="1">Забайкальск</option>
+								<option value="2">Москва</option>
+								<option value="3">Санкт-Петербург</option>
+								<option value="4">Мурманск</option>
+								<option value="5">Волгоград</option>
+							</select>
+						</div>
+						<div class="form-row1__block">
+							<p class="calc__select-form-text">Вариант отправки:</p>
+							<select name="select" class="select">
+								<option value="1">Авиа 7-10 дней</option>
+								<option value="2">Авто-Ж.Д.</option>
+								<option value="3">Морем</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-row2">
+						<p class="calc__select-form-text">Ввод данных:</p>
+						<div class="form-row-block">
+							<div class="form-row2__block mobile">
+								<p class="form-row2-text">Габариты груза (см):</p>
+								<input type="text" class="sm">
+								<p class="form-row2-text">X</p>
+								<input type="text" class="sm">
+								<p class="form-row2-text">X</p>
+								<input type="text" class="sm">
+							</div>
+							<div class="form-row2__block">
+								<p class="form-row2-text">Вес:</p>
+								<input type="text" class="kg">
+							</div>
+							<div class="form-row2__block">
+								<p class="form-row2-text">Объем:</p>
+								<input type="text" class="kg">
+							</div>
+						</div>
+					</div>
+
+				</form>
+				<div class="calc-btn">
+					<span class="span-left"></span>
+					<button type="submit" class="calc-button">Рассчитать</button>
+					<span class="span-right"></span>
+				</div>
+			</div>
 		</div>
 	</div>
 
