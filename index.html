@@ -4,23 +4,39 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-	<title>Document</title>
+	<title>1kargo</title>
 </head>
 
 <body>
 	<div class="wrapper-body">
 		<div class="menu">
-			<a href="#" class="menu-btn"></a>
+			<a href="#" class="menu-btn">
+				<span></span>
+			</a>
 			<nav class="menu-list">
-				<a href="">test</a>
-				<a href="">test</a>
-				<a href="">test</a>
-				<a href="">test</a>
-				<a href="">test</a>
+				<a href="">главная</a>
+				<a href="">доставка</a>
+				<a href="">услуги в китае</a>
+				<a href="">инфо</a>
+				<a href="">новости</a>
+				<a href="">контакты</a>
+				<div class="sprite">
+					<svg class="icons instagram">
+						<use xlink:href="sprite.svg#instagram"></use>
+					</svg>
+					<svg class="icons vk">
+						<use xlink:href="sprite.svg#vk"></use>
+					</svg>
+					<svg class="icons mail">
+						<use xlink:href="sprite.svg#email"></use>
+					</svg>
+				</div>
 			</nav>
+
 		</div>
 		<div class="content">
 			<section class="wrapper-topheader">
@@ -388,8 +404,63 @@
 					</ol>
 				</div>
 			</section>
+			<section class="slider">
+				<div class="container">
+					<h1 class="swiper-title">Отзывы наших клиентов</h1>
+					<div class="image-slider swiper-container">
+						<div class="image-slider__wrapper swiper-wrapper">
+							<div class=" image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="./img/photo.png" alt="">
+								</div>
+
+								<h2 class="image-slider__subtitle">Ольга - директор тур.агентства "Курортный роман" </h2>
+								<a href="#">www.kurort_roman.ru</a>
+								<p class="image-slider__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+									corrupti
+									ad consequuntur? Modi perferendis eius praesentium doloremque debitis ducimus omnis assumenda
+									minus reprehenderit provident, dignissimos repellat, ut aperiam dolore eos.</p>
+								<p class="image-slider__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+									nihil,
+									placeat asperiores et
+									eius aliquid error tempora amet velit similique doloremque animi voluptatum natus ipsa, quasi
+									a quam totam provident.</p>
+							</div>
+							<div class=" image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="./img/photo.png" alt="">
+								</div>
+								<h2 class="image-slider__subtitle">Ольга - директор тур.агентства "Курортный роман" </h2>
+								<a href="#">www.kurort_rom</a>
+								<p class="image-slider__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+									corrupti
+									ad consequuntur? Modi perferendis eius praesentium doloremque debitis ducimus omnis assumenda
+									minus reprehenderit provident, dignissimos repellat, ut aperiam dolore eos.</p>
+							</div>
+							<div class=" image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img src="./img/photo.png" alt="">
+								</div>
+								<h2 class="image-slider__subtitle">Ольга - директор тур.агентства "Курортный роман" </h2>
+								<a href="#">www.kurort_rom</a>
+								<p class="image-slider__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+									corrupti
+									ad consequuntur? Modi perferendis eius praesentium doloremque debitis ducimus omnis assumenda
+									minus reprehenderit provident, dignissimos repellat, ut aperiam dolore eos. Lorem ipsum dolor
+									sit amet, consectetur adipisicing elit. Voluptatum vel ea porro voluptatem eos temporibus
+									inventore blanditiis. Amet, accusamus assumenda itaque, repudiandae numquam delectus ipsa
+									ipsum similique veritatis non perspiciatis.</p>
+							</div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
 		</div>
 	</div>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 	<script src="./js/main.js"></script>

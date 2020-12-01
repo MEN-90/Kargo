@@ -1,11 +1,3 @@
-//@prepros-append burger.js
-//@prepros-append slider.js
-
-$('.menu-btn').on('click', function (e) {
-	e.preventDefault();
-	$('.menu').toggleClass('menu_active');
-	$('.content').toggleClass('content_active');
-})
 new Swiper('.image-slider', {
 	navigation: {
 		nextEl: '.swiper-button-next',
