@@ -194,7 +194,7 @@ body {
         background-color: #6b6675;
         position: absolute;
         right: -35px;
-        top: 10px; }
+        top: 30px; }
         body .wrapper-body .menu .menu-btn span {
           width: 20px;
           height: 2px;
@@ -991,7 +991,7 @@ body {
             margin-bottom: 25px;
             width: 75%; }
   body .bg1 {
-    background: url(../img/bg1.png) center center/cover no-repeat;
+    background: url(../img/bgf.png) 0 0/cover no-repeat, url(../img/bg1.png) center center/cover no-repeat;
     padding-top: 60px;
     padding-bottom: 75px; }
     body .bg1 .bg1__img {
@@ -1160,3 +1160,292 @@ body {
       background-color: #e93b3b;
       width: 10px;
       height: 10px; }
+  body .bg2 {
+    background: url(../img/bgf.png) 0 0/cover no-repeat, url(../img/bg2.png) center center/cover no-repeat;
+    padding-top: 60px;
+    padding-bottom: 75px; }
+  body .track-status .track-cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    body .track-status .track-cart .track__title {
+      text-align: center;
+      font-size: 30px;
+      padding-top: 55px; }
+    body .track-status .track-cart .track__carts-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      @media (max-width: 991px) {
+        body .track-status .track-cart .track__carts-row {
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; } }
+      body .track-status .track-cart .track__carts-row .track__carts-column {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 35px;
+        width: 260px;
+        border: 1px solid #c4c7ca; }
+        @media (max-width: 1199px) {
+          body .track-status .track-cart .track__carts-row .track__carts-column {
+            margin: 35px 5px 0; } }
+        body .track-status .track-cart .track__carts-row .track__carts-column .track__carts-title {
+          background-color: #25333c;
+          color: #fff;
+          text-transform: uppercase;
+          width: 100%;
+          padding: 20px 0;
+          text-align: center;
+          font-weight: bold; }
+        body .track-status .track-cart .track__carts-row .track__carts-column img {
+          margin-top: 20px; }
+        body .track-status .track-cart .track__carts-row .track__carts-column .track__carts-text {
+          font-size: 24px;
+          font-weight: bold;
+          padding-top: 15px; }
+        body .track-status .track-cart .track__carts-row .track__carts-column .track__carts-btn {
+          border: 1px solid #e93b3b;
+          border-radius: 3px;
+          color: #e93b3b;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 15px 20px;
+          margin: 30px 0 15px 0; }
+          body .track-status .track-cart .track__carts-row .track__carts-column .track__carts-btn:hover {
+            border: 2px solid #e93b3b; }
+    body .track-status .track-cart .status-track {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      body .track-status .track-cart .status-track .status-track__title {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px; }
+      body .track-status .track-cart .status-track .status-track-line {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        body .track-status .track-cart .status-track .status-track-line span {
+          border-top: 1px solid #e93b3b;
+          margin-top: 60px;
+          width: 45%; }
+          @media (max-width: 991px) {
+            body .track-status .track-cart .status-track .status-track-line span {
+              width: 40%; } }
+          @media (max-width: 767px) {
+            body .track-status .track-cart .status-track .status-track-line span {
+              width: 38%; } }
+        body .track-status .track-cart .status-track .status-track-line .status-track__img {
+          margin: 20px auto;
+          border: 1px solid #e93b3b;
+          height: 80px;
+          width: 80px;
+          border-radius: 50%;
+          text-align: center;
+          padding-top: 13px; }
+      body .track-status .track-cart .status-track .status-track__row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        @media (max-width: 767px) {
+          body .track-status .track-cart .status-track .status-track__row {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; } }
+        body .track-status .track-cart .status-track .status-track__row input {
+          border: 1px solid #c1c4c7;
+          padding: 18px;
+          width: 25%;
+          margin-right: 15px; }
+          body .track-status .track-cart .status-track .status-track__row input:last-child {
+            margin-right: 0; }
+          @media (max-width: 767px) {
+            body .track-status .track-cart .status-track .status-track__row input {
+              width: 50%;
+              margin: 5px 0 0 0; } }
+          @media (max-width: 767px) {
+            body .track-status .track-cart .status-track .status-track__row input {
+              width: 80%; } }
+      body .track-status .track-cart .status-track .status-track-btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 40px; }
+        @media (max-width: 991px) {
+          body .track-status .track-cart .status-track .status-track-btn {
+            margin-top: 20px; } }
+        body .track-status .track-cart .status-track .status-track-btn .status-track-button {
+          margin: 0 auto;
+          padding: 20px 45px;
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: bold;
+          border-radius: 5px;
+          background-color: #e93b3b; }
+        body .track-status .track-cart .status-track .status-track-btn span {
+          border-bottom: 1px solid #e93b3b;
+          margin-bottom: 28px;
+          width: 40%; }
+          @media (max-width: 991px) {
+            body .track-status .track-cart .status-track .status-track-btn span {
+              width: 35%; } }
+          @media (max-width: 767px) {
+            body .track-status .track-cart .status-track .status-track-btn span {
+              width: 30%; } }
+          body .track-status .track-cart .status-track .status-track-btn span.span-left {
+            border-left: 1px solid #e93b3b;
+            margin-top: -135px; }
+            @media (max-width: 767px) {
+              body .track-status .track-cart .status-track .status-track-btn span.span-left {
+                margin-top: -201px; } }
+          body .track-status .track-cart .status-track .status-track-btn span.span-right {
+            border-right: 1px solid #e93b3b;
+            margin-top: -135px; }
+            @media (max-width: 767px) {
+              body .track-status .track-cart .status-track .status-track-btn span.span-right {
+                margin-top: -201px; } }
+  body .managers {
+    background-color: #f3f3f3; }
+    body .managers .managers__title {
+      font-size: 30px;
+      text-align: center;
+      padding-top: 50px; }
+    body .managers .wrapper-manager {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding-bottom: 50px; }
+      body .managers .wrapper-manager .managers-cart {
+        width: 30%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: 30px 15px; }
+        @media (max-width: 767px) {
+          body .managers .wrapper-manager .managers-cart {
+            width: 40%; } }
+        @media (max-width: 575px) {
+          body .managers .wrapper-manager .managers-cart {
+            width: 100%; } }
+        body .managers .wrapper-manager .managers-cart .managers-cart__img {
+          text-align: center;
+          margin-bottom: -25px; }
+        body .managers .wrapper-manager .managers-cart .wrap-cart {
+          background-color: #fff;
+          height: 125px; }
+          body .managers .wrapper-manager .managers-cart .wrap-cart .managers-cart__name {
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 16px;
+            color: #e93b3b;
+            padding-top: 40px; }
+          body .managers .wrapper-manager .managers-cart .wrap-cart .managers-cart__text {
+            line-height: 1.5;
+            padding-top: 10px;
+            text-align: center; }
+  body .bg3 {
+    background: url(../img/bgf.png) 0 0/cover no-repeat, url(../img/bg3.png) center center/cover no-repeat;
+    padding-top: 60px;
+    padding-bottom: 75px; }
+  body .diploms {
+    background-color: #f3f3f3; }
+    body .diploms .diploms__title {
+      padding-top: 45px;
+      padding-bottom: 30px;
+      font-size: 30px;
+      text-align: center; }
+    body .diploms .diploms__photo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding-bottom: 65px; }
+  body .bg4 {
+    background: url(../img/bgf.png) 0 0/cover no-repeat, url(../img/bg4.png) center center/cover no-repeat;
+    padding-top: 60px;
+    padding-bottom: 75px; }
+  body .work .work__title {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px; }
+  body .work .work__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    body .work .work__column .work__row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 30px;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      body .work .work__column .work__row .work__cart {
+        text-align: center;
+        -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+        flex: 25%; }
+        body .work .work__column .work__row .work__cart .work__cart-title {
+          font-size: 16px;
+          color: #e93b3b;
+          padding-top: 25px; }
+        body .work .work__column .work__row .work__cart .work__cart-text {
+          line-height: 1.2;
+          padding-top: 20px;
+          font-weight: 300; }
+  body .work .work__info {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    padding: 40px 60px;
+    margin: 45px 0;
+    line-height: 1.5; }
