@@ -80,6 +80,7 @@ body {
 				position: absolute;
 				right: -35px;
 				top: 30px;
+
 				span {
 					width: 20px;
 					height: 2px;
@@ -225,6 +226,7 @@ body {
 
 	.header {
 		display: flex;
+		justify-content: space-between;
 
 		.logo {
 			display: flex;
@@ -281,60 +283,32 @@ body {
 		}
 
 		.header__menu {
-			@media (max-width: 767px) {
-				position: fixed;
-				top: -100%;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				overflow: auto;
-				transition: all 0.3s ease 0s;
-				background-color: #343e44;
-				padding: 100px 10px 20px 10px;
-			}
-			&.burger_active {
-				top: 0;
-			}
-		}
-		.header__list {
-			display: flex;
-			position: relative;
-			z-index: 2;
-			margin-left: 110px;
-			margin-top: 30px;
-			li {
-				margin-right: 55px;
-				&.header__link a {
-					text-transform: uppercase;
-					color: #fff;
-					font-family: "Open Sans";
-					font-size: 13px;
-					font-weight: 700;
-					cursor: pointer;
+			.header__list {
+				display: flex;
+				.header__link {
+					margin-left: 45px;
+					margin-top: 30px;
+					&:first-child {
+						margin-left: 0;
+					}
+					a {
+						text-transform: uppercase;
+						color: #fff;
+						font-family: "Open Sans";
+						font-size: 13px;
+						font-weight: 700;
+						cursor: pointer;
+						@media (max-width: 1199px) {
+							font-size: 12px;
+						}
+					}
 					@media (max-width: 991px) {
-						font-size: 12px;
-						padding-right: 5px;
+						margin-left: 30px;
+					}
+					@media (max-width: 767px) {
+						display: none;
 					}
 				}
-				@media (max-width: 1199px) {
-					margin-right: 28px;
-				}
-				@media (max-width: 767px) {
-					margin: 0px 0px 30px 0px;
-				}
-				&:last-child {
-					margin-right: 0;
-				}
-			}
-
-			@media (max-width: 1199px) {
-				margin-left: 85px;
-			}
-			@media (max-width: 991px) {
-				margin-left: 30px;
-			}
-			@media (max-width: 767px) {
-				display: block;
 			}
 		}
 	}
@@ -1327,9 +1301,22 @@ body {
 				display: flex;
 				margin-top: 30px;
 				justify-content: space-between;
+				@media (max-width: 991px) {
+					flex-wrap: wrap;
+				}
 				.work__cart {
 					text-align: center;
 					flex: 25%;
+					@media (max-width: 991px) {
+						flex: 33%;
+						margin-top: 20px;
+					}
+					@media (max-width: 767px) {
+						flex: 50%;
+					}
+					@media (max-width: 767px) {
+						flex: 100%;
+					}
 					.work__cart-title {
 						font-size: 16px;
 						color: #e93b3b;
@@ -1351,6 +1338,10 @@ body {
 			padding: 40px 60px;
 			margin: 45px 0;
 			line-height: 1.5;
+			@media (max-width: 767px) {
+				font-size: 13px;
+				padding: 20px;
+			}
 		}
 	}
 }
