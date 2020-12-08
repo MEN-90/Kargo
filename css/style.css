@@ -188,12 +188,12 @@ body {
                 border: 2px solid #fff; }
       body .wrapper-body .menu .menu-btn {
         display: block;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         background-color: #6b6675;
         position: absolute;
-        right: -35px;
+        right: -45px;
         top: 30px; }
         body .wrapper-body .menu .menu-btn span {
           width: 20px;
@@ -751,9 +751,6 @@ body {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
-      @media (max-width: 767px) {
-        body .block-calc .calc__select .form-row2 {
-          margin-top: -15px; } }
       body .block-calc .calc__select .form-row2 .calc__select-form-text {
         font-size: 16px;
         font-weight: bold;
@@ -766,61 +763,71 @@ body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
         margin-top: 10px; }
-        @media (max-width: 991px) {
-          body .block-calc .calc__select .form-row2 .form-row-block {
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
         body .block-calc .calc__select .form-row2 .form-row-block input {
           border: 1px solid #c1c4c7;
-          padding-left: 10px; }
-          body .block-calc .calc__select .form-row2 .form-row-block input.sm {
-            width: 70px;
-            height: 50px; }
-            @media (max-width: 991px) {
-              body .block-calc .calc__select .form-row2 .form-row-block input.sm {
-                height: 42px;
-                margin-bottom: 10px; } }
-          body .block-calc .calc__select .form-row2 .form-row-block input.kg {
-            width: 95px; }
-            @media (max-width: 991px) {
-              body .block-calc .calc__select .form-row2 .form-row-block input.kg {
-                height: 42px; } }
+          padding: 15px;
+          margin: 10px 20px; }
         body .block-calc .calc__select .form-row2 .form-row-block .form-row2__block {
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          @media (max-width: 991px) {
+            body .block-calc .calc__select .form-row2 .form-row-block .form-row2__block {
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+              margin-top: 10px; } }
+          body .block-calc .calc__select .form-row2 .form-row-block .form-row2__block .form-input {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            @media (max-width: 767px) {
+              body .block-calc .calc__select .form-row2 .form-row-block .form-row2__block .form-input {
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center; } }
+            body .block-calc .calc__select .form-row2 .form-row-block .form-row2__block .form-input .form-row2-text {
+              margin-top: 30px; }
+        body .block-calc .calc__select .form-row2 .form-row-block .row-form {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          margin-right: 25px; }
-          @media (max-width: 575px) {
-            body .block-calc .calc__select .form-row2 .form-row-block .form-row2__block {
-              margin-right: 0; }
-              body .block-calc .calc__select .form-row2 .form-row-block .form-row2__block:last-child {
-                margin-left: 10px; } }
-    @media (max-width: 575px) and (max-width: 320px) {
-      body .block-calc .calc__select .form-row2 .form-row-block .form-row2__block:last-child {
-        margin-top: 10px; } }
-          body .block-calc .calc__select .form-row2 .form-row-block .form-row2__block:last-child {
-            margin-right: 0; }
-          @media (max-width: 575px) {
-            body .block-calc .calc__select .form-row2 .form-row-block .form-row2__block.mobile {
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          @media (max-width: 767px) {
+            body .block-calc .calc__select .form-row2 .form-row-block .row-form {
               -ms-flex-wrap: wrap;
               flex-wrap: wrap;
               -webkit-box-pack: center;
               -ms-flex-pack: center;
               justify-content: center; } }
-          body .block-calc .calc__select .form-row2 .form-row-block .form-row2__block .form-row2-text {
-            padding-top: 20px;
-            padding-right: 13px; }
-            @media (max-width: 991px) {
-              body .block-calc .calc__select .form-row2 .form-row-block .form-row2__block .form-row2-text {
-                padding-top: 15px; } }
-            body .block-calc .calc__select .form-row2 .form-row-block .form-row2__block .form-row2-text:nth-child(3) {
-              padding-left: 13px; }
-            body .block-calc .calc__select .form-row2 .form-row-block .form-row2__block .form-row2-text:nth-child(5) {
-              padding-left: 13px; }
+          body .block-calc .calc__select .form-row2 .form-row-block .row-form .form-row2__block {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            body .block-calc .calc__select .form-row2 .form-row-block .row-form .form-row2__block .form-input {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
     body .block-calc .calc__select .calc-btn {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1000,6 +1007,9 @@ body {
       line-height: 1.5;
       color: #fff;
       text-align: center; }
+      @media (max-width: 575px) {
+        body .bg1 .bg1__subtitle {
+          font-size: 16px; } }
   body .scale {
     background-color: #f3f3f3; }
     body .scale .scale__title {

@@ -73,12 +73,12 @@ body {
 			}
 			.menu-btn {
 				display: block;
-				width: 30px;
-				height: 30px;
+				width: 40px;
+				height: 40px;
 				border-radius: 50%;
 				background-color: #6b6675;
 				position: absolute;
-				right: -35px;
+				right: -45px;
 				top: 30px;
 
 				span {
@@ -622,9 +622,7 @@ body {
 			.form-row2 {
 				display: flex;
 				flex-direction: column;
-				@media (max-width: 767px) {
-					margin-top: -15px;
-				}
+
 				.calc__select-form-text {
 					font-size: 16px;
 					font-weight: bold;
@@ -636,62 +634,45 @@ body {
 				}
 				.form-row-block {
 					display: flex;
-					justify-content: center;
+					flex-direction: column;
 					margin-top: 10px;
-					@media (max-width: 991px) {
-						flex-wrap: wrap;
-					}
 					input {
 						border: 1px solid #c1c4c7;
-						padding-left: 10px;
-						&.sm {
-							width: 70px;
-							height: 50px;
-							@media (max-width: 991px) {
-								height: 42px;
-								margin-bottom: 10px;
-							}
-						}
-
-						&.kg {
-							width: 95px;
-							@media (max-width: 991px) {
-								height: 42px;
-							}
-						}
+						padding: 15px;
+						margin: 10px 20px;
 					}
 					.form-row2__block {
-						display: flex;
-						margin-right: 25px;
-						@media (max-width: 575px) {
-							margin-right: 0;
-							&:last-child {
-								margin-left: 10px;
-								@media (max-width: 320px) {
-									margin-top: 10px;
-								}
-							}
+						display: inline-flex;
+						justify-content: center;
+						align-items: center;
+						@media (max-width: 991px) {
+							flex-wrap: wrap;
+							margin-top: 10px;
 						}
-						&:last-child {
-							margin-right: 0;
-						}
-						&.mobile {
-							@media (max-width: 575px) {
+						.form-input {
+							display: flex;
+							@media (max-width: 767px) {
 								flex-wrap: wrap;
 								justify-content: center;
 							}
+							.form-row2-text {
+								margin-top: 30px;
+							}
 						}
-						.form-row2-text {
-							padding-top: 20px;
-							@media (max-width: 991px) {
-								padding-top: 15px;
-							}
-							padding-right: 13px;
-							&:nth-child(3) {
-								padding-left: 13px;
-							}
-							&:nth-child(5) {
-								padding-left: 13px;
+					}
+					.row-form {
+						display: flex;
+						justify-content: center;
+						@media (max-width: 767px) {
+							flex-wrap: wrap;
+							justify-content: center;
+						}
+						.form-row2__block {
+							display: inline-flex;
+							justify-content: center;
+							align-items: center;
+							.form-input {
+								display: flex;
 							}
 						}
 					}
@@ -878,6 +859,9 @@ body {
 			line-height: 1.5;
 			color: #fff;
 			text-align: center;
+			@media (max-width: 575px) {
+				font-size: 16px;
+			}
 		}
 	}
 	//SCALE=====================================================
