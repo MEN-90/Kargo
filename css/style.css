@@ -468,6 +468,9 @@ body {
           -webkit-box-direction: reverse;
           -ms-flex-flow: column-reverse;
           flex-flow: column-reverse; } }
+      @media (max-width: 575px) {
+        body .forms .block-forms {
+          margin-bottom: 30px; } }
       body .forms .block-forms .form {
         display: -webkit-box;
         display: -ms-flexbox;

@@ -350,6 +350,9 @@ body {
 				flex-wrap: wrap;
 				flex-flow: column-reverse;
 			}
+			@media (max-width: 575px) {
+				margin-bottom: 30px;
+			}
 			.form {
 				display: flex;
 				flex-direction: column;
