@@ -1423,21 +1423,30 @@ body {
 					display: flex;
 					justify-content: space-between;
 					width: 95%;
+					@media (max-width: 575px) {
+						justify-content: center;
+						flex-wrap: wrap;
+					}
 					input {
 						border: 1px solid #c1c4c7;
 						padding: 15px;
 						margin-bottom: 5px;
 						width: 33%;
+						@media (max-width: 575px) {
+							width: 100%;
+						}
 					}
 				}
 				.form__input-text {
-					textarea {
-						resize: none;
-					}
-					::placeholder {
-						padding: 15px;
+					display: flex;
+					justify-content: center;
+					width: 100%;
+					input {
+						padding: 30px 15px;
+						width: 95%;
 					}
 				}
+
 				.button {
 					margin-top: 10px;
 					margin-bottom: 23px;
@@ -1463,6 +1472,13 @@ body {
 			justify-content: space-between;
 			align-items: center;
 			padding: 30px 0;
+			@media (max-width: 767px) {
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+			@media (max-width: 767px) {
+				justify-content: center;
+			}
 			.logo {
 				display: flex;
 				align-items: center;
@@ -1485,33 +1501,14 @@ body {
 							font-weight: bold;
 							font-size: 27px;
 							margin-top: -5px;
-							@media (max-width: 991px) {
-								font-size: 21px;
-								padding-top: 6px;
-							}
 						}
 						&.subtitle {
 							font-family: "Roboto Condensed";
 							font-weight: normal;
 							font-size: 12px;
 							padding-left: 14px;
-							@media (max-width: 991px) {
-								font-size: 8px;
-							}
-						}
-						@media (max-width: 991px) {
-							margin-left: -15px;
-						}
-						@media (max-width: 767px) {
-							margin-left: 0;
 						}
 					}
-				}
-				@media (max-width: 991px) {
-					display: block;
-				}
-				@media (max-width: 767px) {
-					display: flex;
 				}
 			}
 			.top-footer__forms {
@@ -1520,6 +1517,9 @@ body {
 						margin-right: 10px;
 					}
 				}
+				@media (max-width: 991px) {
+					display: none;
+				}
 			}
 			img {
 				margin-right: 5px;
@@ -1527,12 +1527,37 @@ body {
 			}
 			a {
 				color: #d3d6d8;
+				@media (max-width: 1199px) {
+					font-size: 12px;
+				}
 			}
 			.top-footer__contacts {
 				&.phone {
 					font-weight: bold;
 					img {
 						margin-right: 10px;
+					}
+				}
+				@media (max-width: 991px) {
+					display: none;
+				}
+			}
+			.sprite-footer {
+				display: flex;
+				@media (max-width: 767px) {
+					margin-left: 15px;
+				}
+				.icon-svg {
+					width: 35px;
+					height: 35px;
+					border: 1px solid #d3d6d8;
+					fill: #d3d6d8;
+					padding: 5px;
+					margin: 3px;
+
+					&:hover {
+						border: 2px solid #fff;
+						cursor: pointer;
 					}
 				}
 			}
